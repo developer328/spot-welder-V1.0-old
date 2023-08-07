@@ -1,4 +1,4 @@
-MWTFSW - MicroWave TransFormer Spot Welder
+MicroWave TransFormer Spot Welder
 ============================================
 
 

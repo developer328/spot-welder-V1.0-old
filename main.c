@@ -44,6 +44,7 @@ int ADC_read(int NTC_pin);
 int temp_convert(int ADC_val);
 
 
+#define F_CPU 16000000
 #define SSD1306_ADDR  0x78
 #define ntc_R1 10000
 #define ntc_R2 10000

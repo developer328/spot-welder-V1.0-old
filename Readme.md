@@ -146,7 +146,7 @@ Follow the warnings and temperature readings on the OLED display to ensure safe 
 ### rotary encoder use
  - Change value : Turn encoder
  - Select value : Turn encoder
- - Allow : Push encoder BTN 
+ - Allow to change value: Push encoder switch 
 
  - right first pin 9
  - left first pin 10

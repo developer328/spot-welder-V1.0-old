@@ -222,7 +222,7 @@ void select_and_change(void)
 {
 	if (btn_count == 0)//selecting mode
 	{  	
-		if (blink_stop == 0)//for fast navigation
+		if (blink_stop == 0)
 		{
 			_delay_ms(100);
 			blink_val = !blink_val;	
@@ -312,7 +312,7 @@ void change_selected_val(void)
 		cursor_Y = 15;
 		if (equal_stop_val0)
 		{
-			R_count = pulse0_time;//for start de.. or in.. crease from last value 
+			R_count = pulse0_time;//for start decrease or increase from last value 
 			equal_stop_val0 = 0;//for equation happens only once 
 		}
 		R_limiter(0, 500);
@@ -323,7 +323,7 @@ void change_selected_val(void)
 		cursor_Y = 30;
 		if (equal_stop_val0)
 		{
-			R_count = pulse_delay_time;//for start de.. or in.. crease from last value 
+			R_count = pulse_delay_time;//for start decrease or increase from last value 
 			equal_stop_val0 = 0;//for equation happens only once 
 		}
 		R_limiter(0, 500);
@@ -334,7 +334,7 @@ void change_selected_val(void)
 		cursor_Y = 45;
 		if (equal_stop_val0)
 		{
-			R_count = pulse1_time;//for start de.. or in.. crease from last value 
+			R_count = pulse1_time;//for start decrease or increase from last value 
 			equal_stop_val0 = 0;//for equation happens only once 
 		}
 		R_limiter(0, 500);
@@ -394,7 +394,7 @@ void encoder_rotary(void)
 	  B_state = 1;
   }
 
-  if ((PINB & 0x04) && (PINB & 0x02)) {  //first or last state both are zero - reset
+  if ((PINB & 0x04) && (PINB & 0x02)) {  //both are zero = reset
 	  A_state = 0;
 	  B_state = 0;
   }
